@@ -1,0 +1,154 @@
+.menu__btn {
+    display: none;
+}
+
+@media (max-width:1200px) {
+
+    .menu__btn {
+        display: none;
+    }
+
+    .nav{
+        padding:    15px;
+    }
+
+    .about {
+        padding: 0 15px;
+        padding-bottom: 70px;
+    }
+
+    .about__content {
+        gap: 15px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .about__content-text-title {
+        font-size: 30px;
+    }
+
+    .about__content img{
+        display: flex;
+        width: 400px;
+        height: 500px;
+    }
+
+    .about__content-text{
+        display: flex;
+        text-align: center;
+    }
+
+    .footer{
+        padding: 30px;
+    }
+}
+
+
+    @media (max-width:992px) {
+
+        .about {
+            padding: 0 20px;
+        }
+    
+        .about__content {
+            gap: 20px;
+        }
+
+        .header__content {
+            min-height: 650px;
+
+        }
+
+        .nav__list {
+            gap: 40px;
+        }
+
+
+        .about__content-text-desct{
+            font-size: 16px;
+        }
+
+        .about__content img{
+            display: flex;
+            width: 350px;
+            height: 450px;
+        }
+
+        .works__content{
+            padding: 0 15px;
+            justify-content: space-evenly;
+        }
+    }
+
+
+    @media (max-width:768px) {
+        .nav {
+            padding: 20px 24px;
+        }
+
+        .nav__list-link {
+            font-size: 22px;
+        }
+
+        .nav__logo {
+            font-size: 33px;
+        }
+
+        .nav__list {
+            gap: 30px;
+        }
+
+        .header__title {
+            text-align: center;
+            font-size: 35px;
+            margin: 0 15px;
+        }
+
+        .about__content{
+            flex-direction: column;
+        }
+
+        .about__content img{
+            max-width: 100%;
+        }
+
+        .about {
+            padding-bottom: 70px;
+        }
+
+        .footer__title{
+            font-size:35px;
+        }
+        
+    }
+
+    @media (max-width:576px) {
+        .nav {
+            position: relative;
+        }
+
+        .nav__list {
+            position: absolute;
+            flex-direction: column;
+            background: #000;
+            top: 100%;
+            right: 0;
+            padding: 15px;
+            transform: scaleY(0);
+            transition: 0.5s;
+            transform-origin: top;
+        }
+
+        .nav__menu:hover .nav__list {
+            transform: scaleY(1);
+        }
+
+        .menu__btn {
+            display: flex;
+        }
+
+        .footer__title{
+            font-size:35px;
+        }
+
+    }
